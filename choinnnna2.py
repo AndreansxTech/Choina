@@ -22,15 +22,15 @@ kolory = ['red', 'yellow', 'blue', 'magenta', 'cyan']
 while True:
     for j in range(poz):
         for i in range(wys - 1 + j):
-            gałąź = '@' * (2 * i + 1)
-            gałąź = list(gałąź)
-            for b in range(len(gałąź)):
+            bombka = list(bombka)
+            bombka = '@' * (2 * i + 1)
+            for b in range(len(bombka)):
                 if random.randint(0, 3) == 0:  # Używamy funkcji random aby wylosować kolorowy kawałek choinki
-                    gałąź[b] = colored(gałąź[b], random.choice(kolory))
+                    bombka[b] = colored(bombka[b], random.choice(kolory))
                 else:
-                    gałąź[b] = colored(gałąź[b], 'green')
-            gałąź = ''.join(gałąź)
-            print(' ' * ((max_szer - (2 * i + 1)) // 2) + gałąź)
+                    bombka[b] = colored(bombka[b], 'green')
+            bombka = ''.join(bombka)
+            print(' ' * ((max_szer - (2 * i + 1)) // 2) + bombka)
     #Dodajemy pień
     if poz > 3:
       for i in range(3):
