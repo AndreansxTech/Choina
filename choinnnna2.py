@@ -22,8 +22,8 @@ kolory = ['red', 'yellow', 'blue', 'magenta', 'cyan']
 while True:
     for j in range(poz):
         for i in range(wys - 1 + j):
-            bombka = list(bombka)
             bombka = '@' * (2 * i + 1)
+            bombka = list(bombka)
             for b in range(len(bombka)):
                 if random.randint(0, 3) == 0:  # Używamy funkcji random aby wylosować kolorowy kawałek choinki
                     bombka[b] = colored(bombka[b], random.choice(kolory))
