@@ -5,7 +5,6 @@ from termcolor import colored
 import time
 
 print("Zalecane jest aby nie podawać odstępu czasowego mniejszego niż 20")
-print("______________________")
 
 wys = int(input("Wpisz wysokość jednego poziomu choinki: "))
 poz = int(input("Wpisz ilość poziomów choinki: "))
